@@ -1,5 +1,7 @@
 # MathPlay
-Juego para aprender las tablas de multiplicar.
+Juego para aprender las tablas de multiplicar interactivamente. Aplicación web creada en HTML5, CSS3, Vanilla JavaScript; totalmente responsive (se adapta a cualquier dispositivo). 
+
+Puede probar la versión más reciente aquí: https://jeisonroblero.github.io/MathPlay/
 
 ## Capturas de pantalla
 ### Página principal
