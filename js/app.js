@@ -49,5 +49,5 @@ function generateTableRows(multiplicador) {
 function play(n) {
     console.log(n);
     // Navega hacia la página del juego
-    window.location.href = `../game/?table=${n}`;
+    window.location.href = `./game/index.html?table=${n}`;
 }
