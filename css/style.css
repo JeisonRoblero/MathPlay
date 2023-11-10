@@ -259,11 +259,11 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .card-main {
+    .card-game {
         padding: 15px 25px;
     }
 
-    .table-main td {
+    .table-game td {
         padding: 4px 6px;
     }
 
