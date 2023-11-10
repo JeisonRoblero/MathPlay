@@ -88,7 +88,7 @@ function verificarRespuestas(nTable) {
         backgroundVentana = 'fondo-4.jpg';
         backdropVentana = 'm.gif';
     } else {
-        textoVentana = `<b>Obtuviste ${contBuenas} respuestas buenas y ${contMalas} respuestas malas.<br><br>Tu punteo es: ${contBuenas}/10.<br><br>Las respuestas incorrectas están en las filas: ${respuestasIncorrectas.join(', ')}. Porfavor procura repasar más <a href="../index.html#table${nTable}">la tabla del ${nTable}</a> y vuelvelo a intentar :).</b>`;
+        textoVentana = `<b>Obtuviste ${contBuenas} respuestas buenas y ${contMalas} respuestas malas.<br><br>Tu punteo es: ${contBuenas}/10.<br><br>Las respuestas incorrectas están en las filas: ${respuestasIncorrectas.join(', ')}. Porfavor procura repasar más <a href="../index.html#table${nTable}">la tabla del ${nTable}</a> y vuelvelo a intentar 😊.</b>`;
         backgroundVentana = 'fondo-5.jpg';
         backdropVentana = 'sad.gif';
     }
