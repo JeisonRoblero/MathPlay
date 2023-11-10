@@ -38,7 +38,10 @@ function generateTableRows(multiplicador) {
 }
 
 function verificarRespuestas(nTable) {
-    console.log(nTable);
+    let textoVentana = '';
+    let backgroundVentana = '';
+    let backdropVentana = '';
+
     // Se obtienen todas las respuestas
     const respuestas = document.querySelectorAll('.respuesta-table input');
     let contBuenas = 0;
@@ -81,36 +84,28 @@ function verificarRespuestas(nTable) {
 
     // Muestra un mensaje indicando el resultado
     if (respuestasIncorrectas.length === 0) {
-        
-        Swal.fire({
-            title: "¡Felicidades, todas las respuestas son correctas! Punteo 10/10 pts.",
-            width: 600,
-            padding: "3em",
-            color: "#e6e4ff",
-            background: "#fff url(../assets/img/fondo-4.jpg)",
-            backdrop: `
-              rgba(0,0,123,0.4)
-              url("../assets/img/m.gif")
-              left top
-              no-repeat
-            `
-        });
-
+        textoVentana = `<b>¡Felicidades, todas las respuestas son correctas! Punteo 10/10 pts.</b>`;
+        backgroundVentana = 'fondo-4.jpg';
+        backdropVentana = 'm.gif';
     } else {
-        Swal.fire({
-            title: 'Obtuviste ' + contBuenas + ' respuestas buenas y ' + contMalas + ' respuestas malas. Tu punteo es: ' + contBuenas + '/10. ' + `Las respuestas incorrectas están en las filas: ${respuestasIncorrectas.join(', ')}. Porfavor procura repasar más esta tabla y vuelvelo a intentar :).`,
-            width: 600,
-            padding: "3em",
-            color: "#e6e4ff",
-            background: "#fff url(../assets/img/fondo-4.jpg)",
-            backdrop: `
-              rgba(0,0,123,0.4)
-              url("../assets/img/m.gif")
-              left top
-              no-repeat
-            `
-        });
+        textoVentana = `<b>Obtuviste ${contBuenas} respuestas buenas y ${contMalas} respuestas malas.<br><br>Tu punteo es: ${contBuenas}/10.<br><br>Las respuestas incorrectas están en las filas: ${respuestasIncorrectas.join(', ')}. Porfavor procura repasar más <a href="../index.html#table${nTable}">la tabla del ${nTable}</a> y vuelvelo a intentar :).</b>`;
+        backgroundVentana = 'fondo-5.jpg';
+        backdropVentana = 'sad.gif';
     }
+
+    Swal.fire({
+        title: textoVentana,
+        width: 600,
+        padding: "3em",
+        color: "#ffffff",
+        background: `#fff url(../assets/img/${backgroundVentana})`,
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("../assets/img/${backdropVentana}")
+          left top
+          no-repeat
+        `
+    });
 }
 
 

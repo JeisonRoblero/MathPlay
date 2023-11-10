@@ -8,7 +8,7 @@ function loadTablesCards() {
     let htmlCards = '';
     for (let i = 1; i <= 10; i++) {
         htmlCards += `
-            <div class="card-main">
+            <div class="card-main" id="table${i}">
                 <p class="titulo-card-main">
                     Tabla del <span class="numero-tabla">${i}</span>
                 </p>
