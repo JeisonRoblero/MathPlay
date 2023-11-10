@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/icono.png" type="image/x-icon" />
+    <title>Proyecto Aprendizaje</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/a3c0bc2905.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin = "anonymous"
+    </script>
+</head>
+
+<body class="main-body">
+    <header>
+        <a class="container-header" href="./">
+            <img src="assets/img/icono.png" alt="Logo Aprendizaje" class="logo-header" />
+            <h2 class="title-header">MathPlay</h2>
+        </a>
+    </header>
+
+    <main class="main-center">
+        <div class="container-main">
+            <h3 class="title-main">Tablas de Multiplicar</h3>
+            <p class="desc-game-main">
+                <b>Tablas MathPlay: </b><br>Este es un juego para aprender las tablas de multiplicación. <br>
+
+                <b>Instrucciones: </b><br>
+                A continuación se presentan las tablas de multiplicar de la 1 a la 10, 
+                debes aprendertelas y cuando ya te sientas seguro dale click en el botón de "Play",
+                entrarás a una pequeña prueba para contestar y completar los datos correspondientes,
+                una vez resueltos dar click en "Enviar" para comprobar los conocimientos adquiridos. <br>
+
+                Posteriormente se mostrarán los resultados y te dirá si debes reforzar el estudio de esa 
+                tabla de multiplicar. 
+
+                <button class="exit-desc-game-main" onclick="exitDescGame()"><i class="fas fa-check-circle"></i> Entendido</button>
+            </p>
+            <div class="cards-container-main">
+                <!-- 
+                    Aquí se rellena con las tarjetas de las tablas de multiplicar
+                    de manera dinámica con JavaScript por medio del método
+                    loadTablesCards().
+                -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info-footer">
+            <div class="desc-footer">
+                <h4 class="title-desc-footer">MathPlay</h4>
+                <p class="content-desc-footer">
+                    Aplicación web para el aprendizaje de matemáticas.
+                </p>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <h4 class="title-links-footer">Enlaces</h4>
+                    <li><a href="#">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-footer">© 2023 Copyright Jeison Roblero</div>
+    </footer>
+
+    <!-- Interacción JavaScript -->
+    <script src="js/app.js"></script>
+    <script>loadTablesCards();</script>
+</body>
+
+</html>
