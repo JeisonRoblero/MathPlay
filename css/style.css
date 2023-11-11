@@ -148,7 +148,7 @@ header {
 }
 
 .card-body-main:hover {
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
 
 .titulo-card-main {
@@ -168,7 +168,7 @@ header {
 .table-main td {
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 4px 12px;
+    padding: 4px 10px;
     font-size: 1.4rem;
 }
 

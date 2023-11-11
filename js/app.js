@@ -6,7 +6,7 @@ function exitDescGame() {
 function loadTablesCards() {
     const cardsContainer = document.querySelector('.cards-container-main');
     let htmlCards = '';
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 12; i++) {
         htmlCards += `
             <div class="card-main card-body-main" id="table${i}">
                 <p class="titulo-card-main">
