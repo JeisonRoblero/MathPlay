@@ -143,6 +143,14 @@ header {
     border-radius: 0.5rem;
 }
 
+.card-body-main {
+    transition: 0.5s all ease;
+}
+
+.card-body-main:hover {
+    transform: scale(1.03);
+}
+
 .titulo-card-main {
     text-align: center;
     margin-top: -2px;
